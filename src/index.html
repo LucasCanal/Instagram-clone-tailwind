@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Projeto - Tailwind</title>
+</head>
+<body class="overflow-hidden">
+    <div class="h-screen w-screen flex justify-center items-center">
+        <!-- Imagem Principal -->
+        <div class="hidden md:flex justify-center items-center h-full">
+            <img class="h-4/5" src="./img/insta-img.png" alt="">
+        </div>
+
+        <!-- Formulário -->
+        <div class="flex flex-col justify-center items-center h-full"> <!-- Adicionada a altura total aqui -->
+            <form class="w-90 flex flex-col justify-normal items-center border border-slate-300 rounded-sm px-24 py-24 gap-5 -mt-10"> <!-- Adicionado -mt-10 -->
+                <img class="w-64" src="./img/insta-logo.png" alt="">
+
+                <input class="border-slate-300 h-12 w-full pl-3 py-5 border rounded-sm" placeholder="Telefone, nome de usuário ou e-mail" required>
+                <input class="border-slate-300 h-12 w-full pl-3 py-5 border rounded-sm" placeholder="Senha" type="password" required>
+
+                <button class="bg-sky-400 w-full rounded-md h-12 text-slate-50 hover:bg-blue-300" type="submit">Entrar</button>
+
+                <a class="text-blue-800 font-bold cursor-pointer">Entrar com o Facebook</a>
+                <a class="text-blue-800 text-sm cursor-pointer">Esqueceu a senha?</a>
+            </form>
+
+            <div class="w-90 my-4 text-center py-5 px-12 border border-slate-300 rounded-sm -mt-5"> <!-- Adicionado -mt-5 -->
+                <p>Não tem uma conta? <a class="text-blue-400 font-bold">Cadastrar-se</a></p>
+            </div>
+
+            <p>Obtenha o Aplicativo.</p>
+
+            <div class="flex gap-2 mt-4">
+                <img class="h-12" src="./img/apple.png" alt="">
+                <img class="h-12" src="./img/google.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <div class="row-span-1 col-span-2 mt-10">
+        <ul class="flex flex-wrap gap-5 justify-center">
+            <li class="text-slate-800 text-sm">Meta</li>
+            <li class="text-slate-800 text-sm">About</li>
+            <li class="text-slate-800 text-sm">Blog</li>
+            <li class="text-slate-800 text-sm">Jobs</li>
+            <li class="text-slate-800 text-sm">Help</li>
+            <li class="text-slate-800 text-sm">API</li>
+            <li class="text-slate-800 text-sm">Privacy</li>
+            <li class="text-slate-800 text-sm">Terms</li>
+            <li class="text-slate-800 text-sm">Locations</li>
+            <li class="text-slate-800 text-sm">Instagram Lite</li>
+            <li class="text-slate-800 text-sm">Threads</li>
+            <li class="text-slate-800 text-sm">Contact uploading and non-users</li>
+            <li class="text-slate-800 text-sm">Meta Verified</li>
+        </ul>
+
+        <ul class="flex flex-wrap gap-5 justify-center mt-6">
+            <li class="text-slate-800">Português (Brasil)</li>
+            <li class="text-slate-800">© 2024 Instagram from Meta</li>
+        </ul>
+    </div>
+</body>
+</html>
+
+
+
+
